@@ -32,7 +32,7 @@ generateEl.addEventListener('click', () => {
 
     resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length)
 })
-
+//generate the random password
 function generatePassword(lower, upper, number, symbol, length) {
     let generatedPassword = ''
     const typesCount = lower + upper + number + symbol
@@ -53,7 +53,7 @@ function generatePassword(lower, upper, number, symbol, length) {
 
     return finalPassword
 }
-
+//methods to get the upper, lower, number and special character 
 function getRandomLower() {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
 }
